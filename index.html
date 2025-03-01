@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Dating MVP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>X Dating MVP</h1>
+    <div>
+        <label for="mode">Choose Mode:</label>
+        <select id="mode" onchange="toggleMode()">
+            <option value="serious">Serious Mode</option>
+            <option value="unhinged">Unhinged Mode</option>
+        </select>
+    </div>
+    <form id="preferencesForm">
+        <div>
+            <label for="age">Age Range (e.g., 20-30):</label>
+            <input type="text" id="age" placeholder="20-30">
+        </div>
+        <div>
+            <label for="location">Location (e.g., New York):</label>
+            <input type="text" id="location" placeholder="New York">
+        </div>
+        <div>
+            <label for="interests">Interests (e.g., hiking, movies):</label>
+            <input type="text" id="interests" placeholder="hiking, movies">
+        </div>
+        <div id="unhingedOptions" style="display: none;">
+            <label for="conspiracy">Conspiracy Belief Level (0-10):</label>
+            <input type="range" id="conspiracy" min="0" max="10" value="0">
+            <span id="conspiracyValue">0</span>
+        </div>
+        <button type="button" onclick="getMatches()">Get Matches</button>
+    </form>
+    <div id="matches">
+        <h2>Matches</h2>
+        <div id="matchList" class="match-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

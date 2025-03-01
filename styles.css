@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+div {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    background-color: #45a049;
+}
+#matches {
+    margin-top: 20px;
+}
+.match-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.match-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.match-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+.match-card p {
+    margin: 5px 0;
+    color: #666;
+}
+.x-profile-link {
+    color: #1DA1F2;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 5px;
+    display: inline-block;
+}
+.x-profile-link:hover {
+    color: #0a74b7;
+    text-decoration: none;
+}
+.profile-pic-container {
+    text-align: center;
+}
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    object-fit: cover;
+}
